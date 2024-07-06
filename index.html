@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ludo</title>
+    <style>
+        #Game {
+            background-color: white;
+            margin: 50px;
+            border: 3px solid yellow;
+            border-radius: 10px;
+            height: 300px;
+            display: grid;
+            overflow:hidden;
+            grid-template-rows: repeat(13, 1fr);
+            grid-template-columns: repeat(13, 1fr);
+
+        }
+
+        .Home {
+            background-color: orange;
+            border: 2px solid rgb(0, 0, 0);
+        }
+        .Opponant {
+            border: 2px solid black;
+            border-radius: 50%;
+
+        }
+    </style>
+    <script type="module" src="game.js"></script>
+</head>
+
+<body>
+    <div id="Game">
+    </div>
+    <button id="button">Roll the Dice</button>
+    <input type="number" id="text" value="0" />
+    <h1 id="player">red</h1>
+</body>
+
+</html>
